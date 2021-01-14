@@ -1,0 +1,206 @@
+[debug] [2021-01-08T00:15:44.090Z] ----------------------------------------------------------------------
+[debug] [2021-01-08T00:15:44.092Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2021-01-08T00:15:44.092Z] CLI Version:   9.1.2
+[debug] [2021-01-08T00:15:44.092Z] Platform:      darwin
+[debug] [2021-01-08T00:15:44.092Z] Node Version:  v15.5.1
+[debug] [2021-01-08T00:15:44.103Z] Time:          Fri Jan 08 2021 00:15:44 GMT+0000 (Greenwich Mean Time)
+[debug] [2021-01-08T00:15:44.103Z] ----------------------------------------------------------------------
+[debug] [2021-01-08T00:15:44.104Z] 
+[debug] [2021-01-08T00:15:44.110Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-08T00:15:44.111Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/francesco.anselmo/Documents/Code/Repositories/github/light_and_lighting/collaborative_word_cloud
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-08T00:15:51.258Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2021-01-08T00:15:51.594Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:15:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project collaborative-word-cloud (collaborative word cloud) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-01-08T00:15:55.272Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/collaborative-word-cloud/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-01-08T00:15:56.213Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:15:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-01-08T00:15:56.215Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/collaborative-word-cloud/locations/-/instances/collaborative-word-cloud-default-rtdb  
+ 
+[debug] [2021-01-08T00:15:56.585Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:15:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-01-08T00:16:08.795Z] >>> HTTP REQUEST GET https://collaborative-word-cloud-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-01-08T00:16:09.001Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Fri, 08 Jan 2021 00:16:08 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  Database Rules for collaborative-word-cloud-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-01-08T00:16:09.003Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/collaborative-word-cloud/services/firestore.googleapis.com  
+ 
+[debug] [2021-01-08T00:16:09.854Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:16:09.855Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/collaborative-word-cloud  
+ 
+[debug] [2021-01-08T00:16:10.091Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:16:10.092Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-01-08T00:16:10.092Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-08T00:16:10.114Z] > authorizing via signed-in user
+[debug] [2021-01-08T00:16:10.114Z] [iam] checking project collaborative-word-cloud for permissions ["firebase.projects.get"]
+[debug] [2021-01-08T00:16:10.115Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/collaborative-word-cloud:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-01-08T00:16:10.841Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=542","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-01-08T00:16:15.023Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/collaborative-word-cloud/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-01-08T00:16:15.768Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:16:15.769Z] Found ruleset: projects/collaborative-word-cloud/rulesets/cd8e4d21-ec8e-46f8-908b-81daff672c90
+[debug] [2021-01-08T00:16:15.769Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/collaborative-word-cloud/rulesets/cd8e4d21-ec8e-46f8-908b-81daff672c90  
+ 
+[debug] [2021-01-08T00:16:16.480Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-01-08T00:16:19.405Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/collaborative-word-cloud/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-01-08T00:16:19.406Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/collaborative-word-cloud/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-01-08T00:16:20.177Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:16:20.413Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-01-08T00:16:20.417Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-08T00:16:20.422Z] > authorizing via signed-in user
+[debug] [2021-01-08T00:16:20.422Z] [iam] checking project collaborative-word-cloud for permissions ["firebase.projects.get"]
+[debug] [2021-01-08T00:16:20.422Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/collaborative-word-cloud:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-01-08T00:16:21.058Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=550","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:16:21.060Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/collaborative-word-cloud/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-01-08T00:16:21.060Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/collaborative-word-cloud/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-01-08T00:16:21.891Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:16:22.566Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:16:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-01-08T00:18:56.701Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-01-08T00:18:56.790Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-01-08T00:18:56.790Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.2","browserURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.2/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.2/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.2/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.2/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/francesco.anselmo/Documents/Code/Repositories/github/light_and_lighting/collaborative_word_cloud is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=692315024&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-01-08T00:21:24.156Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"231fd099d558166c4190","redirect_uri":"http://localhost:9005","state":"692315024"}
+[debug] [2021-01-08T00:21:25.003Z] <<< HTTP RESPONSE 200 {"date":"Fri, 08 Jan 2021 00:21:24 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"c179e4f5843e0abb5353e2361ba83ab8\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"E69B:128A4:ED81BFF:15428A7C:5FF7A584"}
+[debug] [2021-01-08T00:21:25.008Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-01-08T00:21:25.417Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-01-08T00:21:25.417Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"pisuke","id":1533891,"node_id":"MDQ6VXNlcjE1MzM4OTE=","avatar_url":"https://avatars2.githubusercontent.com/u/1533891?v=4","gravatar_id":"","url":"https://api.github.com/users/pisuke","html_url":"https://github.com/pisuke","followers_url":"https://api.github.com/users/pisuke/followers","following_url":"https://api.github.com/users/pisuke/following{/other_user}","gists_url":"https://api.github.com/users/pisuke/gists{/gist_id}","starred_url":"https://api.github.com/users/pisuke/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pisuke/subscriptions","organizations_url":"https://api.github.com/users/pisuke/orgs","repos_url":"https://api.github.com/users/pisuke/repos","events_url":"https://api.github.com/users/pisuke/events{/privacy}","received_events_url":"https://api.github.com/users/pisuke/received_events","type":"User","site_admin":false,"name":"Francesco Anselmo","company":"Arup","blog":"http://bozzograo.org","location":null,"email":"pisuke@tiscali.co.uk","hireable":null,"bio":null,"twitter_username":null,"public_repos":67,"public_gists":0,"followers":22,"following":34,"created_at":"2012-03-13T18:12:11Z","updated_at":"2021-01-08T00:20:29Z","private_gists":1,"total_private_repos":1,"owned_private_repos":0,"disk_usage":143704,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as pisuke 
+[info] 
+[debug] [2021-01-08T00:23:39.799Z] >>> [apiv2][query] GET https://api.github.com/repos/pisuke/collaborative-word-cloud/actions/secrets/public-key type=owner
+[debug] [2021-01-08T00:23:40.200Z] <<< [apiv2][status] GET https://api.github.com/repos/pisuke/collaborative-word-cloud/actions/secrets/public-key 200
+[debug] [2021-01-08T00:23:40.200Z] <<< [apiv2][body] GET https://api.github.com/repos/pisuke/collaborative-word-cloud/actions/secrets/public-key {"key_id":"568250167242549743","key":"5zZA/VaM58GNYgs9qFPQItSiwmI0ZTvQD1o6/ae1+g8="}
+[debug] [2021-01-08T00:23:40.201Z] >>> [apiv2][query] GET https://api.github.com/repos/pisuke/collaborative-word-cloud [none]
+[debug] [2021-01-08T00:23:40.544Z] <<< [apiv2][status] GET https://api.github.com/repos/pisuke/collaborative-word-cloud 200
+[debug] [2021-01-08T00:23:40.544Z] <<< [apiv2][body] GET https://api.github.com/repos/pisuke/collaborative-word-cloud {"id":327756499,"node_id":"MDEwOlJlcG9zaXRvcnkzMjc3NTY0OTk=","name":"collaborative-word-cloud","full_name":"pisuke/collaborative-word-cloud","private":false,"owner":{"login":"pisuke","id":1533891,"node_id":"MDQ6VXNlcjE1MzM4OTE=","avatar_url":"https://avatars2.githubusercontent.com/u/1533891?v=4","gravatar_id":"","url":"https://api.github.com/users/pisuke","html_url":"https://github.com/pisuke","followers_url":"https://api.github.com/users/pisuke/followers","following_url":"https://api.github.com/users/pisuke/following{/other_user}","gists_url":"https://api.github.com/users/pisuke/gists{/gist_id}","starred_url":"https://api.github.com/users/pisuke/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pisuke/subscriptions","organizations_url":"https://api.github.com/users/pisuke/orgs","repos_url":"https://api.github.com/users/pisuke/repos","events_url":"https://api.github.com/users/pisuke/events{/privacy}","received_events_url":"https://api.github.com/users/pisuke/received_events","type":"User","site_admin":false},"html_url":"https://github.com/pisuke/collaborative-word-cloud","description":"Collaborative word cloud","fork":false,"url":"https://api.github.com/repos/pisuke/collaborative-word-cloud","forks_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/forks","keys_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/teams","hooks_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/hooks","issue_events_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/issues/events{/number}","events_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/events","assignees_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/assignees{/user}","branches_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/branches{/branch}","tags_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/tags","blobs_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/git/refs{/sha}","trees_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/statuses/{sha}","languages_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/languages","stargazers_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/stargazers","contributors_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/contributors","subscribers_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/subscribers","subscription_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/subscription","commits_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/commits{/sha}","git_commits_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/git/commits{/sha}","comments_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/comments{/number}","issue_comment_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/issues/comments{/number}","contents_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/contents/{+path}","compare_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/merges","archive_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/downloads","issues_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/issues{/number}","pulls_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/pulls{/number}","milestones_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/milestones{/number}","notifications_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/labels{/name}","releases_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/releases{/id}","deployments_url":"https://api.github.com/repos/pisuke/collaborative-word-cloud/deployments","created_at":"2021-01-08T00:23:24Z","updated_at":"2021-01-08T00:23:28Z","pushed_at":"2021-01-08T00:23:26Z","git_url":"git://github.com/pisuke/collaborative-word-cloud.git","ssh_url":"git@github.com:pisuke/collaborative-word-cloud.git","clone_url":"https://github.com/pisuke/collaborative-word-cloud.git","svn_url":"https://github.com/pisuke/collaborative-word-cloud","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":{"key":"mit","name":"MIT License","spdx_id":"MIT","url":"https://api.github.com/licenses/mit","node_id":"MDc6TGljZW5zZTEz"},"forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-01-08T00:23:40.546Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/collaborative-word-cloud/serviceAccounts  
+ {"accountId":"github-action-327756499","serviceAccount":{"displayName":"GitHub Actions (pisuke/collaborative-word-cloud)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository pisuke/collaborative-word-cloud"}}
+[debug] [2021-01-08T00:23:41.614Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:23:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:23:41.615Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/collaborative-word-cloud/serviceAccounts/github-action-327756499@collaborative-word-cloud.iam.gserviceaccount.com  
+ 
+[debug] [2021-01-08T00:23:41.616Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/collaborative-word-cloud:getIamPolicy  
+ 
+[debug] [2021-01-08T00:23:42.393Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:23:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:23:42.411Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:23:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=680","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:23:42.412Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/collaborative-word-cloud:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwW4WHdnrt0=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-180034896251@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:collaborative-word-cloud@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-49wv8@collaborative-word-cloud.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-180034896251@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-49wv8@collaborative-word-cloud.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:francesco.anselmo@gmail.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-327756499@collaborative-word-cloud.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-327756499@collaborative-word-cloud.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-327756499@collaborative-word-cloud.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-327756499@collaborative-word-cloud.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-01-08T00:23:43.842Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:23:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1066","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T00:23:43.843Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/collaborative-word-cloud/serviceAccounts/github-action-327756499@collaborative-word-cloud.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-01-08T00:23:44.999Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 00:23:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] ✔  Created service account github-action-327756499 with Firebase Hosting admin permissions. 
+[debug] [2021-01-08T00:23:45.068Z] >>> [apiv2][query] PUT https://api.github.com/repos/pisuke/collaborative-word-cloud/actions/secrets/FIREBASE_SERVICE_ACCOUNT_COLLABORATIVE_WORD_CLOUD [none]
+[debug] [2021-01-08T00:23:45.069Z] >>> [apiv2][body] PUT https://api.github.com/repos/pisuke/collaborative-word-cloud/actions/secrets/FIREBASE_SERVICE_ACCOUNT_COLLABORATIVE_WORD_CLOUD {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2021-01-08T00:23:45.466Z] <<< [apiv2][status] PUT https://api.github.com/repos/pisuke/collaborative-word-cloud/actions/secrets/FIREBASE_SERVICE_ACCOUNT_COLLABORATIVE_WORD_CLOUD 201
+[debug] [2021-01-08T00:23:45.466Z] <<< [apiv2][body] PUT https://api.github.com/repos/pisuke/collaborative-word-cloud/actions/secrets/FIREBASE_SERVICE_ACCOUNT_COLLABORATIVE_WORD_CLOUD {}
+[info] ✔  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_COLLABORATIVE_WORD_CLOUD. 
+[info] i  You can manage your secrets at https://github.com/pisuke/collaborative-word-cloud/settings/secrets. 
+[info] 
+[info] 
+[info] ✔  Created workflow file /Users/francesco.anselmo/Documents/Code/Repositories/github/light_and_lighting/collaborative_word_cloud/.github/workflows/firebase-hosting-pull-request.yml 
+[info] 
+[info] ✔  Created workflow file /Users/francesco.anselmo/Documents/Code/Repositories/github/light_and_lighting/collaborative_word_cloud/.github/workflows/firebase-hosting-merge.yml 
+[info] 
+[info] i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] i  Action required: Push any new workflow file(s) to your repo 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Emulators Setup
+[info] i  firestore: downloading cloud-firestore-emulator-v1.11.11.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.11.11.jar..."}}
+[debug] [2021-01-08T00:25:12.444Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.11.jar [none]
+[debug] [2021-01-08T00:25:12.947Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.11.jar 200
+[debug] [2021-01-08T00:25:12.947Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.11.jar [stream]
+[info] i  database: downloading firebase-database-emulator-v4.7.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.7.2.jar..."}}
+[debug] [2021-01-08T00:25:29.654Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar [none]
+[debug] [2021-01-08T00:25:30.196Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 200
+[debug] [2021-01-08T00:25:30.196Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar [stream]
+[info] i  pubsub: downloading pubsub-emulator-0.1.0.zip... {"metadata":{"emulator":{"name":"pubsub"},"message":"downloading pubsub-emulator-0.1.0.zip..."}}
+[debug] [2021-01-08T00:25:36.839Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip [none]
+[debug] [2021-01-08T00:25:37.232Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip 200
+[debug] [2021-01-08T00:25:37.232Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip [stream]
+[info] i  ui: downloading ui-v1.4.1.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.4.1.zip..."}}
+[debug] [2021-01-08T00:25:44.902Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.1.zip [none]
+[info] 
+=== Remoteconfig Setup
+[debug] [2021-01-08T00:25:45.207Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.1.zip 200
+[debug] [2021-01-08T00:25:45.207Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.1.zip [stream]
